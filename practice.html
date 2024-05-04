@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Example</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<button id="toggleButton">Toggle</button>
+<div id="toggleDiv" class="hidden">
+    <p>This is a hidden div.</p>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#toggleButton').click(function(){
+            $('#toggleDiv').toggle();
+        });
+    });
+</script>
+
+</body>
+</html>
